@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday, My Loverrr 💉💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #fff7fb;
+      --card: #ffffff;
+      --primary: #ff8fab;
+      --secondary: #7dd3fc;
+      --accent: #c084fc;
+      --text: #334155;
+      --muted: #64748b;
+      --radius: 22px;
+      --shadow: 0 12px 30px rgba(0,0,0,0.08);
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font);
+    }
+
+    body {
+      background: linear-gradient(180deg, #fff1f7, #f0f9ff);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    header h1 {
+      font-size: clamp(26px, 5vw, 36px);
+      color: var(--primary);
+    }
+
+    header p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    section {
+      background: var(--card);
+      margin: 18px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .patient-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .patient-info {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ffe4e6;
+      color: #be123c;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .heart-monitor {
+      background: #fdf2f8;
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: center;
+    }
+
+    .pulse {
+      font-size: 26px;
+      animation: pulse 1.2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: #f8fafc;
+      padding: 14px;
+      border-radius: 18px;
+      text-align: center;
+      font-size: 14px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card span {
+      font-size: 26px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .prescription {
+      background: #f0f9ff;
+      border: 2px dashed var(--secondary);
+      border-radius: var(--radius);
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 999px;
+      border: 1px solid #cbd5f5;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 10px;
+      background: var(--primary);
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .secret {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      background: #fdf4ff;
+      padding: 14px;
+      border-radius: 16px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .patient-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Happy Birthday, Moi Baby Doctor Princess</h1>
+  <p>Your patient (me) is eternally grateful</p>
+</header>
+
+<section>
+  <div class="label">Patient Record</div>
+  <div class="title">Medical Case File</div>
+
+  <div class="patient-card">
+    <div class="patient-info">
+      <strong>Patient Name:</strong> Mookan<br>
+      <strong>Primary Doctor:</strong> Mukiert<br>
+      <strong>Symptoms:</strong> Smiling too much, missing you constantly<br>
+      <strong>Cause:</strong> Fell in love with a doctor<br>
+      <strong>Status:</strong> Stable only when you’re around
+      <div class="badge">Critical condition: In love</div>
+    </div>
+
+    <div class="heart-monitor">
+      <div>Heart Rate Monitor</div>
+      <div class="pulse">💓📈</div>
+      <small>Beats faster when you smile</small>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="label">Diagnosis</div>
+  <div class="title">Why I Love You</div>
+
+  <div class="grid">
+    <div class="card"><span>🩺</span>You heal people and my heart</div>
+    <div class="card"><span>😊</span>Your smile works better than medicine</div>
+    <div class="card"><span>🧠</span>Smart, strong, and dedicated</div>
+    <div class="card"><span>💖</span>Side effect: I’m addicted to you</div>
+  </div>
+</section>
+
+<section>
+  <div class="label">Prescription</div>
+  <div class="title">Doctor’s Orders</div>
+
+  <div class="prescription">
+    Send cute pics of you<br>
+    Chocolate when stressed<br>
+    Eep with youuu<br>
+    Atti with you<br>
+    Lifetime dosage of love
+  </div>
+</section>
+
+<section>
+  <div class="label">Restricted Area</div>
+  <div class="title">Confidential Message</div>
+
+  <p style="font-size:14px;">Enter the secret word (maybe your nickname 👀)</p>
+
+  <input type="password" id="pwd" placeholder="Secret code">
+  <button onclick="unlock()">Unlock 💌</button>
+
+  <div class="secret" id="secret">
+    Happy birthday mukiert, I love you so much papaaaa , you're the best ever , we're going to have fun today , I'm always grateful for you princess, I love you sooo muchhh 💗
+  </div>
+</section>
+
+<footer>
+  Made with Love by Mookan for Muki
+</footer>
+
+<audio id="loveSong" preload="auto" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function unlock() {
+    const pwd = document.getElementById("pwd").value.toLowerCase();
+    const song = document.getElementById("loveSong");
+
+    if (pwd === "sara") { // ✅ PASSWORD FIXED
+      document.getElementById("secret").style.display = "block";
+      song.currentTime = 0;
+      song.volume = 0.7;
+      song.play();
+    } else {
+      alert("Wrong code, Doctor 👀");
+    }
+  }
+</script>
+
+</body>
+</html>
